@@ -13,7 +13,7 @@ import useTodo from '~/use/useTodo'
 
 export default createComponent({
   components: { AddTodo, Todo },
-  setup() {
+  setup () {
     const { todoList, add } = useTodo()
     return {
       todoList,

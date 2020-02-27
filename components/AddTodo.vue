@@ -4,7 +4,9 @@
       <el-input :value="name.value" @change="onChange" />
     </el-col>
     <el-col :span="4">
-      <el-button type="primary" @click="save">追加</el-button>
+      <el-button type="primary" @click="save">
+        追加
+      </el-button>
     </el-col>
   </el-row>
 </template>
@@ -24,7 +26,7 @@ export default createComponent({
       required: true
     }
   },
-  setup(props: Props) {
+  setup (props: Props) {
     const name = ref('')
     const onChange = (newName) => {
       name.value = newName

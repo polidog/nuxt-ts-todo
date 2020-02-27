@@ -1,6 +1,8 @@
 <template>
   <el-row :gutter="20">
-    <el-col :span="20">{{ todo.name }}</el-col>
+    <el-col :span="20">
+      {{ todo.name }}
+    </el-col>
     <el-col :span="4">
       <el-switch
         v-model="changeState"
@@ -29,10 +31,10 @@ export default createComponent({
   setup(props: Props) {
     const todo = props.todo
     const changeState = computed({
-      get() {
+      get(): void {
         return todo.isActive()
       },
-      set(value) {
+      set(): void {
         todo.done()
       }
     })
