@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "target": "es2018",
-    "module": "ESNext",
+    "module": "esnext",
     "moduleResolution": "node",
     "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM"
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
     ],
     "esModuleInterop": true,
     "allowJs": true,
@@ -25,8 +25,7 @@
     "types": [
       "@types/node",
       "@nuxt/types"
-    ],
-    "skipLibCheck": true
+    ]
   },
   "exclude": [
     "node_modules"

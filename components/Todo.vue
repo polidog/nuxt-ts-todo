@@ -1,3 +1,4 @@
+/* eslint-disable space-before-function-paren */
 <template>
   <el-row :gutter="20">
     <el-col :span="20">
@@ -31,7 +32,7 @@ export default createComponent({
   setup(props: Props) {
     const todo = props.todo
     const changeState = computed({
-      get(): void {
+      get(): boolean {
         return todo.isActive()
       },
       set(): void {
